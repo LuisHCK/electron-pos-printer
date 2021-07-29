@@ -86,10 +86,10 @@ var PosPrinter = /** @class */ (function () {
             // open electron window
             var mainWindow = new BrowserWindow({
                 width: 210,
-                height: 1200,
+                height: options.windowHeight || 900,
                 show: !!options.preview,
                 webPreferences: {
-                    nodeIntegration: true,
+                    nodeIntegration: true, // For electron >= 4.0.0
                 }
             });
             // mainWindow

@@ -14,6 +14,7 @@ export interface PosPrintOptions {
     width?: string;
     silent?: boolean;
     pageSize?: SizeOptions;
+    windowHeight?: number;
 }
 export interface SizeOptions {
     height: number;
